@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Video Game Tracker</title>
-    <script src="./JS/app.js"></script>
-    <link rel="stylesheet" href="./CSS/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Video Game Tracker</title>
+  <script src="./JS/app.js"></script>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <div id="input-wrapper">
     <h1>Video Game Tracker</h1>
     <p>Track your completed Video Games</p>
     <form id="new-video-game-entry">
@@ -25,17 +26,20 @@
         </div>
         <div class="entry-field">
           <label for="completed">Completed: </label>
-          <select id="completed">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
+          <input type="radio" name="completed" value="Yes">Yes
+          <input type="radio" name="completed" value="No" required>No
+          <!-- <select id="completed">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select> -->
       </div>
-      <input type="submit" value="save">
-    </form>
-    <button type="button" id="deleteButton">Clear List</button>
-    <hr/>
-    <h2>Your tracked video games</h2>
-    <div class="games-list"></div>
-  </body>
+    </div>
+    <input type="submit" value="save">
+  </form>
+  <button type="button" id="deleteButton">Clear List</button>
+</div>
+<hr/>
+<h2>Your tracked video games</h2>
+<div class="games-list"></div>
+</body>
 </html>

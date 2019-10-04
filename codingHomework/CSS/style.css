@@ -1,0 +1,28 @@
+body {
+  background-color: khaki;
+}
+
+#gameTitle, #cost {
+  background-color: darkkhaki;
+  color: ghostwhite;
+}
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.games-list div {
+  background-color: antiquewhite;
+  color: dimgrey;
+  border: black 1px solid;
+  padding: 0 1em;
+  margin: 0.1em;
+  text-align: center;
+}

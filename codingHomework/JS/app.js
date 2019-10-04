@@ -39,7 +39,7 @@ const createStoredGame = function (form) {
   newGameContainer.appendChild(newGameCost);
 
   const newSelection = document.createElement('p');
-  newSelection.textContent = form.completed.value;
+  newSelection.textContent = `Completed: ${form.completed.value}`;
   newGameContainer.appendChild(newSelection);
 
   return newGameContainer;
